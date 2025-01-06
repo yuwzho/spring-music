@@ -123,7 +123,7 @@ az containerapp create \
 Get the URL of the app and visit it through the browser.
 
 ```sh
-az containerapp show --name $CONTAINER_APP_NAME --resource-group $RESOURCE_GROUP --query properties.latestRevisionFqdn -o tsv
+az containerapp show --name $CONTAINER_APP_NAME --resource-group $RESOURCE_GROUP --query properties.configuration.ingress.fqdn -o tsv
 ```
 
 ## Next Steps

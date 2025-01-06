@@ -16,7 +16,7 @@ You will learn how to:
 - [Connect backing service with Azure Container Apps](#connect-backing-service-with-azure-container-apps)
 - [Update code with Azure dependencies](#update-code-with-azure-dependencies)
 - [Containerize image](#containerize-image)
-- [Create Azure Container Apps](#create-azure-container-apps)
+- [Update app's active profile](#update-apps-active-profile)
 - [Verification](#verification)
 
 ## Prerequisites
@@ -117,7 +117,7 @@ Build the container image using Azure Container Registry.
 az acr pack build -r $ACR_NAME --pull -t spring-music-mysql:latest --builder paketobuildpacks/builder-jammy-base .
 ```
 
-## Create Azure Container Apps
+## Update app's active profile
 
 Create the Azure Container App. 
 - This application will run on active profile `mysql` with the setting environment variables.
@@ -135,5 +135,5 @@ az containerapp update \
 Get the URL of the app and visit it through the browser.
 
 ```sh
-az containerapp show --name $CONTAINER_APP_NAME --resource-group $RESOURCE_GROUP --query properties.latestRevisionFqdn -o tsv
+az containerapp show --name $CONTAINER_APP_NAME --resource-group $RESOURCE_GROUP --query properties.configuration.ingress.fqdn -o tsv
 ```
