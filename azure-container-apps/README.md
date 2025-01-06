@@ -130,7 +130,8 @@ az containerapp show --name $CONTAINER_APP_NAME --resource-group $RESOURCE_GROUP
 
 To connect the Spring Music application with persistent storage, follow the guides below:
 
-- [Using Redis as the backing service](./redis.md)
 - [Using MongoDB as the backing service](./MongoDB.md)
 - [Using MySQL as the backing service](./MySQL.md)
-- [Using PostgreSQL as the backing service](./PostgreSQL.md) (Coming soon)
+- [Using PostgreSQL as the backing service](./PostgreSQL.md)
+- [Using Redis as the backing service](./redis.md) (Coming soon)
+
