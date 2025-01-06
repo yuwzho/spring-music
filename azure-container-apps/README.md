@@ -132,5 +132,5 @@ To connect the Spring Music application with persistent storage, follow the guid
 
 - [Using Redis as the backing service](./redis.md)
 - [Using MongoDB as the backing service](./MongoDB.md)
-- [Using MySQL as the backing service](./MySQL.md) (Coming soon)
+- [Using MySQL as the backing service](./MySQL.md)
 - [Using PostgreSQL as the backing service](./PostgreSQL.md) (Coming soon)
