@@ -34,7 +34,7 @@ spring:
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL55Dialect
+        dialect: org.hibernate.dialect.MySQLDialect
 
 ---
 spring:
